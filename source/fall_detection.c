@@ -38,7 +38,6 @@ cyhal_i2c_cfg_t i2c_cfg =
 static const char* LABELS[IMAI_DATA_OUT_COUNT] = IMAI_SYMBOL_MAP;
 
 // Record when fall is detected. was_fall_detected() will get and clear the flag.
-// Record when fall is detected. was_fall_detected() will get and clear the flag.
 static bool fall_detected = false;
 
 // get and clear
