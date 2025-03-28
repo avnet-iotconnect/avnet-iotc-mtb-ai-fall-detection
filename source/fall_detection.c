@@ -40,12 +40,31 @@ static const char* LABELS[IMAI_DATA_OUT_COUNT] = IMAI_SYMBOL_MAP;
 // Record when fall is detected. was_fall_detected() will get and clear the flag.
 static bool fall_detected = false;
 
+// Is fall calculated based on vector calculation
+static bool fall_approximated = false;
+
 // get and clear
 const bool was_fall_detected(void) {
-    const char* class_map[] = IMAI_SYMBOL_MAP;
-    const char* ret = fall_detected ? class_map[1] : NULL;
-    fall_detected = false; // Unless the next detection triggers at some time...
+    bool ret = fall_detected;
+    fall_detected = false; // Until the next detection triggers at some time...
     return ret;
+}
+
+// get and clear
+const bool was_fall_approximated(void) {
+    bool ret = fall_approximated;
+    fall_approximated = false; // Until the next detection triggers at some time...
+    return ret;
+}
+
+// Roughly approximate if device falling (low acceleration) or hitting something (very high acceleration, but unlikely to detect at 20ms intervals)
+// Mainly rely on falling (low accel)
+const bool check_fall_esimated(float * data) {
+    double gravity_vector = sqrt(pow(data[0], 2) + pow(data[1], 2) + pow(data[2], 2));
+    bool approximated = (gravity_vector > 1.7 || gravity_vector < 0.2);
+    if (approximated) {
+        fall_approximated = true; // uintil cleared by a getter
+    }
 }
 
 //update imu config
@@ -116,7 +135,7 @@ void fed_task(void *pvParameters) {
             -(data.sensor_data.acc.y / (float)IMU_MODEL_CONVERSION_FACTOR),
             -(data.sensor_data.acc.z / (float)IMU_MODEL_CONVERSION_FACTOR),
         };
-
+        
         int enqueue_reslut = IMAI_FED_enqueue(dataIn);
         if (IMAI_RET_SUCCESS != enqueue_reslut)
         {
@@ -133,6 +152,11 @@ void fed_task(void *pvParameters) {
 
                 static int16_t success_flag = 1;
                 prediction_count +=1;
+
+                if (check_fall_esimated(dataIn)) 
+                {
+                    printf("X");
+                }
 
                 if (dataOut[1]==1)
                 {
