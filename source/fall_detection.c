@@ -61,10 +61,15 @@ const bool was_fall_approximated(void) {
 // Mainly rely on falling (low accel)
 const bool check_fall_esimated(float * data) {
     double gravity_vector = sqrt(pow(data[0], 2) + pow(data[1], 2) + pow(data[2], 2));
-    bool approximated = (gravity_vector > 1.7 || gravity_vector < 0.2);
+    bool approximated = (gravity_vector > 7 || gravity_vector < 0.15);
+    if (gravity_vector == 0.0f) {
+        // ignore. This is the first time sensor bring-up
+        return false;
+    }
     if (approximated) {
         fall_approximated = true; // uintil cleared by a getter
     }
+    return approximated;
 }
 
 //update imu config

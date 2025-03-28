@@ -14,7 +14,12 @@
         {
             "name": "detected",
             "type": "BOOLEAN"
+        },
+        {
+            "name": "approximated",
+            "type": "BOOLEAN"
         }
+
     ],
     "commands": [
         {
