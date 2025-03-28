@@ -46,5 +46,6 @@ void app_task(void *pvParameters);
 void fed_task(void *pvParameters);
 
 const bool was_fall_detected(void);
+const bool was_fall_approximated(void);
 
 #endif // APP_TASK_H_

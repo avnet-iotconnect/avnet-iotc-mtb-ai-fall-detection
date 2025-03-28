@@ -281,6 +281,7 @@ static cy_rslt_t publish_telemetry(void) {
     iotcl_telemetry_set_string(msg, "version", APP_VERSION);
     iotcl_telemetry_set_number(msg, "random", rand() % 100); // test some random numbers
     iotcl_telemetry_set_bool(msg, "fall_detected", fall_detected);
+    iotcl_telemetry_set_bool(msg, "fall_approximated", was_fall_approximated());
     iotcl_mqtt_send_telemetry(msg, false);
     iotcl_telemetry_destroy(msg);
     return CY_RSLT_SUCCESS;
