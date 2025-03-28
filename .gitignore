@@ -1,6 +1,7 @@
 # IDE Artifacts
 .idea/
 /.settings/
+/*.code-workspace
 
 
 # Generated files
@@ -12,7 +13,6 @@
 # You may or may not check this is
 /deps/assetlocks.json
 /libs/
-/*.log
 
 
 ###### BELOW THIS LINE IS THE STANDARD MTB GITIGNORE - USE WITH CAUTION ######
@@ -36,6 +36,9 @@
 GeneratedSource/
 *.lock
 .mtbqueryapi
+/*.log
+/.ninja_log
+
 
 # ModusToolbox BSP files. Any custom BSP file is shipped within the 'templates' folder
 bsps/
