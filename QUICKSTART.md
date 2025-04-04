@@ -125,10 +125,11 @@ There will be errors displayed because the device still needs to be created in t
 ## 10. /IOTCONNECT Device Template Setup
 
 An /IOTCONNECT *Device Template* will need to be created or imported. This defines the data format the platform should expect from the device.
-* Download the premade  [Device Template](files/psoc6aifd-device-template.json?raw=1) (**must** Right-Click the link, Save As)
+* Download the premade  [Device Template](https://github.com/avnet-iotconnect/avnet-iotc-mtb-ai-imagimob-rm/blob/main/files/psoc6airm-device-template.json) (**must** Right-Click the link, Save As)
 
-* **Click** the Device icon and the "Device" sub-menu:  
-<img src="https://github.com/avnet-iotconnect/avnet-iotc-mtb-xensiv-example/assets/40640041/57e0b0c8-08ba-4c3f-b33d-489d7d0db568" width=200>
+* **Click** the Device icon and the "Device" sub-menu:
+
+   <img src="https://github.com/avnet-iotconnect/avnet-iotc-mtb-xensiv-example/assets/40640041/57e0b0c8-08ba-4c3f-b33d-489d7d0db568" width=200>
 
 * At the bottom of the page, select the "Templates" icon from the toolbar.<br>![image](https://github.com/avnet-iotconnect/avnet-iotconnect.github.io/assets/40640041/3dc0b82c-13ea-4d99-93be-3adf14575709)
 * At the top-right of the page, select the "Create Template" button.<br>![image](https://github.com/avnet-iotconnect/avnet-iotconnect.github.io/assets/40640041/33325cbd-4fee-4958-b32a-f28d0d52342c)
@@ -136,11 +137,13 @@ An /IOTCONNECT *Device Template* will need to be created or imported. This defin
 * Finally, click the "Browse" button and select the template previously downloaded.
 
 ## 11. /IOTCONNECT Device Creation
-* **Click** the Device icon and the "Device" sub-menu:  
-<img src="https://github.com/avnet-iotconnect/avnet-iotc-mtb-xensiv-example/assets/40640041/57e0b0c8-08ba-4c3f-b33d-489d7d0db568" width=200>
+* **Click** the Device icon and the "Device" sub-menu:
 
-* At the top-right, click on the "Create Device" button:  
-<img src="https://github.com/avnet-iotconnect/avnet-iotc-mtb-xensiv-example/assets/40640041/82e70cb6-018b-4bf3-a92c-a7286b05d73f" width=200>
+   <img src="https://github.com/avnet-iotconnect/avnet-iotc-mtb-xensiv-example/assets/40640041/57e0b0c8-08ba-4c3f-b33d-489d7d0db568" width=200>
+
+* At the top-right, click on the "Create Device" button:
+
+   <img src="https://github.com/avnet-iotconnect/avnet-iotc-mtb-xensiv-example/assets/40640041/82e70cb6-018b-4bf3-a92c-a7286b05d73f" width=200>
 
 * Enter the **DUID** saved from earlier in the *Unique ID* field
 * Enter a description of your choice in the *Display Name* to help identify your device
@@ -169,9 +172,9 @@ Detected snore
 * **Download** the template then select `Create Dashboard` from the top of the page
 * **Select** the `Import Dashboard` option and click `browse` to select the template you just downloaded.
 * **Select** `psoc6airm` for **template** and `<your DUID>` for **device** 
-* **Enter** a name (such as `PSoC6 AI Kit Demo`) and click `Save` to complete the import
+* **Enter** a name (such as `PSoC6 AI Fall Detect`) and click `Save` to complete the import
 
-<img src="files/mtb_ready_model_dashboard.png" width="1000">
+  <img src="files/fall_detection_dashboard_main.png" width="1000">
 
 ## 14. Demonstrating Cloud-to-Device Communication
 /IOTCONNECT supports sending commands from the platform back to the device. Using the "Device Command" widget, a command to toggle an LED ON/OFF from the /IOTCONNECT Dashboard.
