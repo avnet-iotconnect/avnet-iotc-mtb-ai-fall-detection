@@ -16,7 +16,7 @@ This guide has been tested with the following:
 
 ## 4. Flash the Firmware
 * **Download** and **Install** the latest (tested with v5.2) [ModusToolbox Programming Tools](https://softwaretools.infineon.com/tools/com.ifx.tb.tool.modustoolboxprogtools) (Right-Click, "Open link in new tab")
-* **Download** and **unzip** the pre-compiled [avnet-iotc-mtb-ai-fall-detection-INITIAL.zip](http://saleshosted.z13.web.core.windows.net/sdk/infineon/avnet-iotc-mtb-ai-fall-detection-INITIAL.zip) firmware package.(Right-Click, "Save As")
+* **Download** and **unzip** the pre-compiled [avnet-iotc-mtb-ai-fall-detection-INITIAL.zip](https://saleshosted.z13.web.core.windows.net/sdk/infineon/avnet-iotc-mtb-ai-fall-detection-INITIAL.zip) firmware package.(Right-Click, "Save As")
 * Launch the **ModusToolbox Programmer** software and update the firmware if prompted.
 * Next to the **Programmer** drop-down, ensure the item beginning with **KitProg3** is selected
 * Click the dropdown box next to **Board** and select the **CY8CKIT-062S2-AI**.
