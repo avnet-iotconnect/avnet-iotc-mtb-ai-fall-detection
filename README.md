@@ -39,6 +39,8 @@ Refer to the [DEVELOPER_LOCAL_SETUP](https://github.com/avnet-iotconnect/avnet-i
 ## Running the Demo
 The DEEPCRAFT™ model is tailored to detect dangerous falls among elderly people and performs best on unpadded falls. For optimal results, it's recommended to test with a healthy adult and use pillows to avoid injury. The model is designed with very low false positives per user per week, provided the person lays still for 7-10 seconds after the fall event.
 
+<img src="files/fall_detection_dashboard_main.png" width=600>
+
 ### IMU Orientation
 Ensure the IMU (Inertial Measurement Unit) orientation matches the accelerometer X, Y, Z axes:
 
@@ -46,7 +48,8 @@ Ensure the IMU (Inertial Measurement Unit) orientation matches the accelerometer
 - **Y = 1, X = 0, Z = 0**: Hand held up
 - **X = -1, Y = 0, Z = 0**: Hand outstretched, palm facing front
 - **Z = -1, X = 1, Y = 0**: Hand outstretched, palm up
-  ![PSOC6AIKit Orientation](https://saleshosted.z13.web.core.windows.net/demo/ifx/deepcraft/psoc6ai-kit-mounting.jpg)
+  
+  <img src="https://saleshosted.z13.web.core.windows.net/demo/ifx/deepcraft/psoc6ai-kit-mounting.jpg" width=600>
 
 ## /IOTCONNECT Device Rules
 Use /IOTCONNECT rules to manage notifications and responses:
