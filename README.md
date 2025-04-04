@@ -44,7 +44,7 @@ Ensure the IMU (Inertial Measurement Unit) orientation matches the accelerometer
 - **Y = 1, X = 0, Z = 0**: Hand held up
 - **X = -1, Y = 0, Z = 0**: Hand outstretched, palm facing front
 - **Z = -1, X = 1, Y = 0**: Hand outstretched, palm up
-![PSOC6AIKit Orientation](http://saleshosted.z13.web.core.windows.net/demo/ifx/deepcraft/psoc6ai-kit-mounting.jpg)
+  ![PSOC6AIKit Orientation](https://saleshosted.z13.web.core.windows.net/demo/ifx/deepcraft/psoc6ai-kit-mounting.jpg)
 
 ## /IOTCONNECT Device Rules
 Use /IOTCONNECT rules to manage notifications and responses:
