@@ -159,16 +159,14 @@ An /IOTCONNECT *Device Template* will need to be created or imported. This defin
 * After a few seconds, the device will connect, and begin sending telemetry packets similar to the example below:
 
 ```
-Detected snore
-Detected snore
->: {"d":[{"d":{"version":"N-01.00.00","random":32,"class":"snore"}}]}
->: {"d":[{"d":{"version":"N-01.00.00","random":61,"class":"not-detected"}}]}
+.......>: {"d":[{"d":{"version":"01.00.00","random":15,"fall_detected":false}}]}
+.......>: {"d":[{"d":{"version":"01.00.00","random":52,"fall_detected":false}}]}
 ```
 
 * Switch back to the /IOTCONNECT GUI in your browser and **Click** "Live Data" on the left Device menu and verify telemetry is being populated.
 
 ## 13. Import the Dashboard
-* Download the demo [Dashboard Template](files/fall-detection_dashboard_export.json?raw=1) (**must** Right-Click, Save As)
+* Download the demo [Dashboard Template](https://github.com/avnet-iotconnect/avnet-iotc-mtb-ai-fall-detection/raw/main/files/fall_detection_dashboard_export.json) (**Right-click > Save link as...**)
 * **Download** the template then select `Create Dashboard` from the top of the page
 * **Select** the `Import Dashboard` option and click `browse` to select the template you just downloaded.
 * **Select** `psoc6airm` for **template** and `<your DUID>` for **device** 
