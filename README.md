@@ -57,13 +57,7 @@ Use /IOTCONNECT rules to manage notifications and responses:
 - **Rules List**: Configure rules to handle specific incidents, such as "Fall Detected" or "Device Disconnected."
 - **Notification Setup**: Customize notifications via email, push notifications, webhook, or UI alerts based on triggered events.
 
-To make it easier to observe instant gesture detections in a user interface, the last gesture will "linger"
-for some time even when no detection occurs. This application behavior can be controlled with the
-*set-linger-interval* command (see commands below). 
-
-One can also supply a shorter interval (eg. 500 ms) as a parameter to the **set-reporting-interval** command 
-at runtime to increase the reporting interval. this is especially useful for gesture detections.
-
+## /IOTCONNECT Device Rules
 The following commands can be sent to the device using the /IOTCONNECT Web UI:
 
 | Command                  | Argument Type     | Description                                                                                                                                                                 |
