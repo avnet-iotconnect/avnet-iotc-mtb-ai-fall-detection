@@ -177,4 +177,4 @@ Detected snore
 /IOTCONNECT supports sending commands from the platform back to the device. Using the "Device Command" widget, a command to toggle an LED ON/OFF from the /IOTCONNECT Dashboard.
 
 ## 15. Application Examples / Use-cases
-See see some examples of how these models can be used with /IOTCONNECT to solve real-world solutions, explore the application examples in the avnet-iotc-mtb-ai-imagimob-rm repository: [Link](https://github.com/avnet-iotconnect/avnet-iotc-mtb-ai-imagimob-rm/tree/main/files)
+See see some examples of how these models can be used with /IOTCONNECT to solve real-world solutions, explore the application examples in the **avnet-iotc-mtb-ai-imagimob-rm** repository: [Link](https://github.com/avnet-iotconnect/avnet-iotc-mtb-ai-imagimob-rm/tree/main/files)
