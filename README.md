@@ -24,15 +24,17 @@ The code has been developed and tested with MTB 3.3, with VsCode, and the board(
 
 ## Building the Project
 
-[Watch an overview video](https://saleshosted.z13.web.core.windows.net/media/ifx/videos/IFX%20Modus%20with%20IoTConnect.mp4) of creating a new project with /IOTCONNECT in ModusToolbox&trade; then follow the steps below.
+At the time of this publication, the Fall Detection Ready Model is **not** available in the default list of ModusToolbox™ example projects. To build the project:
 
-To build the project, please refer to the 
-[/IOTCONNECT ModusToolbox&trade; Basic Sample Developer Guide](https://github.com/avnet-iotconnect/avnet-iotc-mtb-basic-example/tree/release-v7.0.1/DEVELOPER_GUIDE.md) 
-and note the following:
-- Once ModusToolbox has been installed, the [ModusToolbox&trade; for Machine Learning](https://softwaretools.infineon.com/tools/com.ifx.tb.tool.modustoolboxpackmachinelearning) software should be installed as well.
-- Over-the-air updates are not currently supported.
-- Use the [psoc6airm-device-template.json Device Template](https://raw.githubusercontent.com/avnet-iotconnect/avnet-iotc-mtb-ai-baby-monitor/main/files/psoc6airm-device-template.json) instead of the Basic Sample's template.
-  **Note:** Right-click the link and select "Save Link As" to download the file.
+1. Clone this repository to your local development environment.
+2. Launch ModusToolbox™ and create a new project.
+3. When prompted to select an application, choose **“Browse for Application”** and navigate to the location of this cloned repository.
+
+Refer to the [DEVELOPER_LOCAL_SETUP](https://github.com/avnet-iotconnect/avnet-iotc-mtb-basic-example/blob/main/DEVELOPER_LOCAL_SETUP.md) for detailed step-by-step instructions.
+
+> **Important Notes:**
+> - After installing ModusToolbox™, ensure the **ModusToolbox™ for Machine Learning (MTBML)** extension is also installed to support AI model integration.
+> - **Over-the-air (OTA) updates are currently not supported** in this application.
 
 ## Running the Demo
 The DEEPCRAFT™ model is tailored to detect dangerous falls among elderly people and performs best on unpadded falls. For optimal results, it's recommended to test with a healthy adult and use pillows to avoid injury. The model is designed with very low false positives per user per week, provided the person lays still for 7-10 seconds after the fall event.
