@@ -5,26 +5,27 @@
     "attributes": [
         {
             "name": "version",
-            "type": "STRING"
+            "type": "STRING",
+            "attributeColor": "",
+            "aggregateTypes": []
         },
         {
             "name": "random",
-            "type": "INTEGER"
+            "type": "INTEGER",
+            "attributeColor": "",
+            "aggregateTypes": []
         },
         {
-            "name": "detected",
-            "type": "BOOLEAN"
-        },
-        {
-            "name": "approximated",
-            "type": "BOOLEAN"
+            "name": "fall_detected",
+            "type": "BOOLEAN",
+            "description": "",
+            "aggregateTypes": []
         }
-
     ],
     "commands": [
         {
-            "name": "demo-mode",
-            "command": "demo-mode",
+            "name": "set-linger-interval",
+            "command": "set-linger-interval",
             "requiredParam": true,
             "requiredAck": true,
             "isOTACommand": false
@@ -33,8 +34,15 @@
             "name": "board-user-led",
             "command": "board-user-led",
             "requiredParam": true,
-            "isOTACommand": false,
-            "requiredAck": true
+            "requiredAck": true,
+            "isOTACommand": false
+        },
+        {
+            "name": "demo-mode",
+            "command": "demo-mode",
+            "requiredParam": true,
+            "requiredAck": true,
+            "isOTACommand": false
         },
         {
             "name": "set-reporting-interval",
@@ -42,19 +50,16 @@
             "requiredParam": true,
             "requiredAck": true,
             "isOTACommand": false
-        },
-        {
-            "name": "set-linger-interval",
-            "command": "set-linger-interval",
-            "requiredParam": true,
-            "requiredAck": true,
-            "isOTACommand": false
         }
     ],
     "messageVersion": "2.1",
-    "msgCode": "XG44JNX",
-    "greenGrass": "0",
-    "wireless": "0",
+    "msgCode": "XG4ECSK",
+    "capability": "0",
+    "properties": {
+        "description": null,
+        "dataFrequency": "5",
+        "fileSupport": false
+    },
     "_meta": {
         "version": "2.0"
     }
