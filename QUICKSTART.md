@@ -125,7 +125,7 @@ There will be errors displayed because the device still needs to be created in t
 ## 10. /IOTCONNECT Device Template Setup
 
 An /IOTCONNECT *Device Template* will need to be created or imported. This defines the data format the platform should expect from the device.
-* Download the premade  [Device Template](https://github.com/avnet-iotconnect/avnet-iotc-mtb-ai-imagimob-rm/blob/main/files/psoc6airm-device-template.json) (**must** Right-Click the link, Save As)
+* Download the premade  [Device Template](https://raw.githubusercontent.com/avnet-iotconnect/avnet-iotc-mtb-ai-fall-detection/refs/heads/main/files/psoc6aifd-device-template.json) (**must** Right-Click the link, Save As)
 
 * **Click** the Device icon and the "Device" sub-menu:
 
@@ -166,7 +166,7 @@ An /IOTCONNECT *Device Template* will need to be created or imported. This defin
 * Switch back to the /IOTCONNECT GUI in your browser and **Click** "Live Data" on the left Device menu and verify telemetry is being populated.
 
 ## 13. Import the Dashboard
-* **Download** the demo [Dashboard Template](https://github.com/avnet-iotconnect/avnet-iotc-mtb-ai-imagimob-rm/blob/main/files/fall_detection_dashboard_export.json) (**Right-click > Save link as...**)
+* **Download** the demo [Dashboard Template](https://github.com/avnet-iotconnect/avnet-iotc-mtb-ai-imagimob-rm/blob/main//files/psoc6aifd-device-template.json) (**Right-click > Save link as...**)
 * **Select** `Create Dashboard` from the top of the page
 * **Select** the `Import Dashboard` option and click `browse` to select the template you just downloaded.
 * **Select** `psoc6airm` for **template** and `<your DUID>` for **device** 
